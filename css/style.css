@@ -1,5 +1,6 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+        sans-serif;
     background-color: #111;
     /* max-width: 318px;
     max-height: 396px; */
@@ -37,7 +38,7 @@ h1 {
 }
 
 .row .elem:hover {
-    background-color:rgb(171, 22, 171);
+    background-color: rgb(171, 22, 171);
 }
 
 .elem img {
@@ -106,7 +107,8 @@ button {
     min-width: 100px;
     min-height: 50px;
     font-size: 1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+        sans-serif;
     cursor: pointer;
     transition: all;
     transition-duration: 0.2s;
@@ -141,7 +143,7 @@ button:hover {
     background-color: purple;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
     .row .elem {
         font-size: 1.5rem;
         min-height: 200px;
