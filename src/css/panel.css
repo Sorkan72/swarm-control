@@ -1,22 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
-        sans-serif;
-    background-color: #111;
-    /* max-width: 318px;
-    max-height: 396px; */
-}
-
-h1 {
-    color: white;
-    text-align: center;
-}
-
 #buttons {
     width: calc(100% - 20px);
     /* 20px is the margin left + right */
