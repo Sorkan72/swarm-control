@@ -1,14 +1,15 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "es6",
-    "outDir": "./dist/",
-    "noImplicitAny": true,
-    "allowJs": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "moduleResolution": "node"
-  }
+    "compilerOptions": {
+        "target": "es5",
+        "module": "es6",
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "allowJs": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "moduleResolution": "node",
+        "lib": ["ES5", "DOM", "ES2015"]
+    }
 }
