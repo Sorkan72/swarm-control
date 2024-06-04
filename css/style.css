@@ -1,14 +1,99 @@
+:root {
+    /* Official colors from twitch extension documentation. See below. */
+    /* https://dev.twitch.tv/docs/extensions/designing/#:~:text=Layout%20%E2%80%94%20Panel%20Extensions%20are%20limited,theme%20and%20a%20dark%20theme. */
+    --text-color: #232127;
+    --links-color: #6441a4;
+    --text-overlay-color: #e5e3e8;
+    --background-color: #fff;
+    --background-color-accent: #6441a4;
+
+    /* sb = scrollbar */
+    --sb-base: 0, 0%; /* First HSL two values */
+    --sb-l: 80%; /* This is the 3rd HSL value, lightness */
+    --sb-color: hsl(var(--sb-base), var(--sb-l));
+    --sb-color-lightened: hsl(var(--sb-base), calc(var(--sb-l) + 5%));
+}
+
+[data-theme='dark'] {
+    --text-color: #e5e3e8;
+    --links-color: #e2dbf0;
+    --text-overlay-color: #e5e3e8;
+    --background-color: #201c2b;
+    --background-color-accent: #6441a4;
+
+    /* sb = scrollbar */
+    --sb-base: 0, 0%; /* First HSL two values */
+    --sb-l: 40%; /* This is the 3rd HSL value, lightness */
+    --sb-color: hsl(var(--sb-base), var(--sb-l));
+    --sb-color-lightened: hsl(var(--sb-base), calc(var(--sb-l) + 10%));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
         sans-serif;
-    background-color: #111;
-    /* max-width: 318px;
-    max-height: 396px; */
+    background-color: var(--background-color);
 }
 
 h1 {
     color: white;
     text-align: center;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--sb-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--sb-color-lightened);
+    /* transition: background-color,  0.3s ease-in-out; -> Cant apply transition innately to scrollbar */
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 318px;
+    max-height: 496px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: var(--text-color);
+    gap: 20px;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.grid-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
 }
 
 .row {

@@ -8,9 +8,7 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <main>
-            <h1>Subnautica: Swarm Control&trade;</h1>
-
+        <div id="global-temp-modal">
             <div class="modal" id="onboarding">
                 <div class="content">
                     <h2>Welcome to Subnautica: Swarm Control&trade;</h2>
@@ -36,43 +34,52 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="elem" onclick="ermfish()">
-                    <img src="img/fish.png" />
+        <main class="main-container">
+            <section>
+                <h1>Subnautica: Swarm Control&trade;</h1>
+            </section>
+
+            <section class="grid-container">
+                <div class="grid-item" onclick="ermfish()">
+                    <img src="img/fish.png" alt="Spawn Ermfish" />
                     <p>Spawn Ermfish</p>
                 </div>
-                <div class="elem">
-                    <img src="img/Erm.png" />
+                <div class="grid-item">
+                    <img src="img/Erm.png" alt="Spawn Anneel" />
                     <p>Spawn Anneel</p>
                 </div>
-                <div class="elem">
-                    <img src="img/turttle.png" style="transform: rotate(180deg)" />
+                <div class="grid-item">
+                    <img src="img/turttle.png" style="transform: rotate(180deg)" alt="Kill Vedal" />
                     <p>Kill Vedal</p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="elem">
-                    <p>Test1</p>
+                <!-- Test items -->
+                <div class="grid-item">
+                    <img src="img/test1.png" alt="Test Item 1" />
+                    <p>Test Item 1</p>
                 </div>
-                <div class="elem">
-                    <p>Test2</p>
+                <div class="grid-item">
+                    <img src="img/test2.png" alt="Test Item 2" />
+                    <p>Test Item 2</p>
                 </div>
-                <div class="elem">
-                    <p>Test3</p>
+                <div class="grid-item">
+                    <img src="img/test3.png" alt="Test Item 3" />
+                    <p>Test Item 3</p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="elem">
-                    <p>Test1</p>
+                <div class="grid-item">
+                    <img src="img/test4.png" alt="Test Item 4" />
+                    <p>Test Item 4</p>
                 </div>
-                <div class="elem">
-                    <p>Test2</p>
+                <div class="grid-item">
+                    <img src="img/test5.png" alt="Test Item 5" />
+                    <p>Test Item 5</p>
                 </div>
-                <div class="elem">
-                    <p>Test3</p>
+                <div class="grid-item">
+                    <img src="img/test6.png" alt="Test Item 6" />
+                    <p>Test Item 6</p>
                 </div>
-            </div>
+            </section>
         </main>
 
         <script src="js/main.js"></script>
